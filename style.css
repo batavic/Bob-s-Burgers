@@ -1,0 +1,103 @@
+
+body{
+    background-image:url("bob3.jpg");
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+/*Top Navigation bar*/
+
+.topnav{
+    
+    display:flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    background: #FFF9C8;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: medium solid #eb2a1c;
+    
+    font-family: Verdana;
+    font-size: 22px;
+}
+
+#home,#menu,#contact,#staff,#logo{
+    padding:10px 30px;
+}
+
+.topnav a:hover{
+    background-color: gray;
+    color: black;
+}
+
+.topnav a:active{
+    background-color: white;
+    color: black;
+}
+
+/*h1 and h2*/
+
+.description h1{
+    font-family: Verdana;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    padding:20px 20px;
+}
+
+.description h2{
+    font-family: Verdana;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    padding:1px 20px;
+    
+}
+
+.descriptionbox{
+    background-color: #FFF9C8;
+    opacity:0.9;
+}
+
+/*Create a burger form*/
+
+.createBurger{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.burgerForm{
+    display:flex;
+    padding: 20px 20px;
+    background: #FFF9C8;
+    max-width: 700px;
+    max-height: 800px;
+    border-radius: 10px;
+    border: medium dashed #eb2a1c;
+    
+    font-family: Verdana;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.toppingsLists ul > li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.topList ul > li{
+    display: block;
+}
+
+.submission{
+    text-align: center;
+}

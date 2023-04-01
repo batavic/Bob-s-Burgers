@@ -1,0 +1,93 @@
+
+body{
+    background-image:url("bob3.jpg");
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+/*Top Navigation bar*/
+
+.topnav{
+    
+    display:flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    background: #FFF9C8;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: medium solid #eb2a1c;
+    
+    font-family: Verdana;
+    font-size: 22px;
+}
+
+#home,#menu,#contact,#staff,#logo{
+    padding:10px 30px;
+}
+
+.topnav a:hover{
+    background-color: gray;
+    color: black;
+}
+
+.topnav a:active{
+    background-color: white;
+    color: black;
+}
+
+.description h1{
+    font-size:22px;
+    font-family:Verdana;
+    
+}
+
+.description h2{
+    font-family:Verdana;
+    font-size:18px;
+}
+
+.description{
+    background-color:#FFF9C8;
+    opacity:0.7;
+}
+
+.characterscontainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #FFF9C8;
+    max-width: 800px;
+    border: medium solid #eb2a1c;
+}
+
+.bob,.linda,.tina,.louise,.gene{
+    display:flex;
+    border: thin solid #eb2a1c;
+}
+
+.characterscontainer img{
+    border: thin solid #eb2a1c;
+    width:150px;
+    height:250px;
+}
+
+.characterscontainer p{
+    padding:10px;
+    font-family: Verdana;
+    font-size:16px;
+    max-width: 600px;
+}
+
+.containerbig{
+    display:flex;
+    justify-content: center;
+}

@@ -1,0 +1,144 @@
+body{
+    background-image:url("bob3.jpg");
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+/*Top Navigation bar*/
+
+.topnav{
+    
+    display:flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    background: #FFF9C8;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: medium solid #eb2a1c;
+    
+    font-family: Verdana;
+    font-size: 22px;
+}
+
+#home,#menu,#contact,#staff,#logo{
+    padding:10px 30px;
+}
+
+.topnav a:hover{
+    background-color: gray;
+    color: black;
+}
+
+.topnav a:active{
+    background-color: white;
+    color: black;
+}
+
+.menu-title{
+    font-size:32px;
+    font-weight:bold;
+    font-family: Verdana;
+    text-align:center;
+    background-color: rgba(255, 249, 200, 0.7);
+    padding-left:2px;
+    padding-right:2px;
+}
+
+.burger-of-the-day-container{
+    background-color: rgba(255, 249, 200, 0.7);
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    margin-left:15px;
+    border:solid;
+    border-width: 2px;
+}
+
+.burger-of-the-day{
+    font-size:30px;
+    font-family: Verdana;
+    font-weight:bold;
+    margin-bottom:0px;
+    margin-top:0px;
+}
+
+.burger-of-the-day-title{
+    font-family:fantasy;
+    font-weight:bold;
+    padding-left:5px;
+    padding-right:0px;
+}
+
+.burger-of-the-day-description{
+    font-size:26px;
+    font-family: Verdana;
+    font-weight:normal;
+}
+
+.burger-of-the-day-image{
+    margin-right:15px;
+    object-fit:contain;
+    padding-left:10px;
+}
+
+.text-container{
+    padding-left:10px;
+    padding-top:10px;
+}
+
+.whole-menu{
+    background-color: rgba(255, 249, 200, 0.7);
+    border:solid;
+    border-color:black;
+    margin-top:40px;
+    margin-left:15px;
+    margin-right:15px;
+    padding-left:15px;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+.burger-title{
+    
+    font-size:20px;
+    font-family: Verdana;
+    font-weight:600;
+    margin-bottom:0px;
+}
+
+.burger-description{
+    
+    font-size:18px;
+    font-family: Verdana;
+    margin-top:5px;
+    width:1000px;
+    display:inline-block;
+}
+
+.burger-price{
+    font-size:20px;
+    font-family: Verdana;
+    font-weight:600;
+    margin-left:1200px;
+    margin-right:20px;
+    display:inline;
+}
+
+.menu-item{
+    font-size:26px;
+    font-family: Verdana;
+    font-weight:bold;
+    text-decoration: underline;
+}
+
+.side-dishes-menu{
+    
+}

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        
+        <title> Make your own burger! </title>
+        <link rel="stylesheet" href="style.css">
+        
+        <script>
+            
+            function showBurger(){
+                
+                /*Getting the selected protein */ 
+                var patty=document.getElementById("patty").value;
+                
+                /*Getting the number of patties*/ 
+                var amount=document.getElementById("amount").value;
+                
+                /*Getting the selected buns*/ 
+                var buns=document.getElementById("bun").value;
+                
+                /*Getting the selected toppings*/
+                
+                var array = []
+                var checkboxes = document.querySelectorAll('input[type=checkbox]:checked')
+
+                for (var i = 0; i < checkboxes.length; i++) {
+                array.push(" " + checkboxes[i].value)
+                }
+
+                alert(`The burger you have created will be made using ${buns} buns and ${amount} ${patty} patties. On your burger we'll add${array}.`);
+                
+            }
+        
+        </script>
+        
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        
+    </head>
+    
+    <body>
+        
+        <header>
+            
+            <div class="topnav">
+                
+                <a id="home" href="Home.html"> Home </a>
+            
+                <a id="menu" href="Menu.html"> Menu </a>
+
+                <img id="logo" src="logo.webp" alt="Bob's Burgers Logo" width="80" height="90">
+
+                <a id="contact"> MYO Burger </a>
+
+                <a id="staff" href="Staff.html"> Staff </a>
+            
+            </div>
+        
+        </header>
+        
+        <div class="descriptionbox">
+        
+        <div class="description">
+            
+            <h1>
+                
+                Create your own burger!
+            
+            </h1>
+            
+            <h2>
+            
+                Can't pick from our delicious selection of burgers? Make your own using our signature ingredients, flavourful spices and home-made buns! 
+        
+            </h2>
+        
+        </div>
+            
+        </div>
+        
+        <nav>
+            
+            <div class="createBurger">
+                
+                <div class="burgerForm">
+                
+                   <form class="formForBurger" method="get">
+
+                       <section class="protein">
+                           <label for="patty">What type of protein would you like?</label>
+                           <select name="patty" id="patty">
+                               <option value="chicken"> Chicken </option>
+                               <option value="pork"> Pork </option>
+                               <option value="beef"> Beef </option>
+                               <option value="plant"> Plant Based </option>
+                               <option value="tofu"> Tofu </option>
+                           </select>
+                           
+                       </section>
+
+                       <hr>
+
+                        <section class="patties">
+                            <label for="amount">How many patties would you like?</label>
+                            <input type="number" name="amount" id="amount">
+                        </section>
+
+                       <hr>
+
+                       <section class="cooked">
+                           <label for="doneness">How do you want your protein cooked?</label>
+                           <br><br>
+                           <span>Rare</span>
+                           <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
+                           <span>Well-Done</span>
+                       </section>
+                       
+                       <hr>
+                       
+                       <section class="bun">
+                           <label for="bun"> What kind of bun would you like?</label>
+                           <select name="bun" id="bun">
+                               <option value="plain"> Plain </option>
+                               <option value="sesame"> Sesame </option>
+                               <option value="ciabatta"> Ciabatta </option>
+                               <option value="pretzel"> Pretzel </option>
+                               <option value="bagel"> Bagel </option>
+                               <option value="brioche"> Brioche </option>
+                               <option value="muffin"> English Muffin </option>
+                           </select>
+                       </section>
+                       
+                       <hr>
+                       
+                       <section class="toppings">
+                           <label for="topping"> What toppings would you like on your burger?</label>
+                           <br>
+                           
+                           <div class="toppingsLists">
+                    
+                               <ul>
+                                   
+                                   <li>
+                                       <div class="topList">
+                                       <ul>
+                                           <li>
+                                               <input type="checkbox" name="topping" id="tomato" value="tomato">
+                                   <label for="tomato">Tomato</label>
+                                           </li>
+                                           
+                                           <li>
+                                               <input type="checkbox" name="topping" id="lettuce" value="lettuce">
+                                   <label for="lettuce">Lettuce</label>
+                                               
+                                           </li>
+                                           
+                                           <li>
+                                               <input type="checkbox" name="topping" id="bacon" value="bacon">
+                                   <label for="bacon">Bacon</label>
+                                               
+                                           </li>
+                                           
+                                       </ul>
+                                       </div>
+                                   </li>
+                                   
+                                   <li>
+                                       <div class="topList">
+                                       <ul>
+                                           <li>
+                                               <input type="checkbox" name="topping" id="onions" value="onions">
+                                   <label for="onions">Onions</label>
+                                           </li>
+                                           
+                                           <li>
+                                               <input type="checkbox" name="topping" id="peppers" value="peppers">
+                                   <label for="peppers">Peppers</label>
+                                           </li>
+                                           
+                                           <li>
+                                               <input type="checkbox" name="topping" id="mushrooms" value="mushrooms">
+                                   <label for="mushrooms">Mushroooms</label>
+                                               
+                                           </li>
+                                           
+                                       </ul>
+                                       </div>
+                                   </li>
+                               
+                               </ul>
+                               
+                            </div>
+                           
+                       </section>
+                       
+                       <hr>
+                       
+                       <section class="sauces">
+                           
+                           <label for="sauce"> What sauce would you like on your burger?</label>
+                           <br>
+                           
+                           <div class="toppingsLists">
+                    
+                               <ul>
+                                   
+                                   <li>
+                                       <div class="topList">
+                                       <ul>
+                                           <li>
+                                               <input type="checkbox" name="sauce" id="ketchup" value="ketchup">
+                                   <label for="lettuce">Ketchup</label>
+                                           </li>
+                                           
+                                           <li>
+                                               <input type="checkbox" name="sauce" id="mayo" value="mayo">
+                                   <label for="lettuce">Mayo</label>
+                                               
+                                           </li>
+                                           
+                                       </ul>
+                                       </div>
+                                   </li>
+                                   
+                                   <li>
+                                       <div class="topList">
+                                       <ul>
+                                           <li>
+                                               <input type="checkbox" name="sauce" id="bbq" value="bbq">
+                                   <label for="lettuce">BBQ</label>
+                                               
+                                           </li>
+                                           
+                                           <li>
+                                               <input type="checkbox" name="sauce" id="tabasco" value="tabasco">
+                                   <label for="onions">Tabasco</label>
+                                           </li>
+                                           
+                                           
+                                       </ul>
+                                       </div>
+                                   </li>
+                               
+                               </ul>
+                               
+                            </div>
+                       
+                       </section>
+                       
+                       <hr>
+                       
+                       <section class="cheese">
+                           <span>Do you want to make it a cheeseburger?</span>
+                              <br>
+                              <input type="radio" name="cheese" id="yes" value="yes">
+                              <label for="yes">Yes</label>
+                              <input type="radio" name="cheese" id="no" value="no">
+                              <label for="no">No</label>
+
+                       </section>
+                       
+                       <hr>
+                       
+                       <section class="extra-info">
+                           <label for="extra">Anything else that you want us to know?</label>
+                           <br><br>
+                           <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+                       </section>
+                       
+                       <hr>
+                       
+                       <section class="submission">
+                           <input type="submit" onclick="showBurger()" value="Create my burger!">
+                           <input type="reset" value="Clear">
+                       </section>
+
+
+                    </form>
+                    
+                </div>
+                
+            </div>
+        
+        </nav>
+        
+    </body>
+    
+    <footer>
+            
+        <p> All Rights Reserved to Vic and the creators of Bob's Burgers </p>
+        
+    </footer>
+    
+</html>
